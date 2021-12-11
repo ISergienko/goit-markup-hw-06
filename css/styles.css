@@ -725,7 +725,7 @@ img {
 .form-field {
   padding: 11px 16px 11px 42px;
   border-radius: var(--br-4);
-  font-size: var(--font-s-16);
+  font-size: var(--font-s-14);
   color: var(--color-primary-darker);
   border: 1px solid var(--color-neutral-light-black);
   transition: border-color 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
