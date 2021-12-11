@@ -807,7 +807,7 @@ img {
 .checkbox-icon {
   display: none;
   position: absolute;
-  top: calc(50% - 9px);
+  top: calc(50% - 8px);
   left: 0;
   fill: var(--color-primary);
 }
@@ -815,9 +815,5 @@ img {
 .form-checkbox:checked + .checkbox-icon {
   display: block;
   fill: var(--color-primary-white);
-}
-
-.form-checkbox:checked {
-  border: 2px solid transparent;
-  background-color: var(--color-primary);
+  background: var(--color-primary);
 }
