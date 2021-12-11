@@ -798,7 +798,7 @@ img {
   width: 16px;
   height: 15px;
   margin-right: 7px;
-  margin-top: -2px;
+  margin-top: -1px;
   background: transparent;
   border-radius: var(--br-2);
   border: 2px solid var(--color-primary-darker);
@@ -816,4 +816,5 @@ img {
   display: block;
   fill: var(--color-primary-white);
   background: var(--color-primary);
+  border-radius: var(--br-2);
 }
