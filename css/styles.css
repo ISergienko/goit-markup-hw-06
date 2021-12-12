@@ -717,13 +717,21 @@ img {
 }
 
 .form-group {
-  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
+.form-textarea {
+  margin-bottom: 0;
+}
+
+.form-field-wrapper {
+  position: relative;
+}
+
 .form-field {
+  width: 100%;
   padding: 11px 16px 11px 42px;
   border-radius: var(--br-4);
   font-size: var(--font-s-14);
@@ -739,14 +747,14 @@ img {
   letter-spacing: 0.01em;
 }
 
-.form-textarea {
+.form-field-textarea {
   padding: 11px 16px;
   height: 120px;
   resize: none;
   overflow-y: auto;
 }
 
-.form-textarea::placeholder {
+.form-field-textarea::placeholder {
   font-size: var(--font-s-14);
   color: var(--color-primary-gray);
 }
@@ -755,7 +763,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px auto 30px;
+  margin: 20px auto 30px;
 }
 
 .form-policy-label {
@@ -778,19 +786,23 @@ img {
 
 .form-icon {
   position: absolute;
-  bottom: 12px;
+  top: 50%;
   left: 15px;
+  transform: translateY(-50%);
   fill: var(--color-primary-darker);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field:active,
-.form-field:focus {
+.form-field:focus,
+.form-field:focus-visible {
   border: 1px solid var(--color-primary);
+  outline: none;
 }
 
 .form-field:active ~ .form-icon,
-.form-field:focus ~ .form-icon {
+.form-field:focus ~ .form-icon,
+.form-field:focus-visible ~ .form-icon {
   fill: var(--color-primary);
 }
 
